@@ -1,0 +1,166 @@
+body {
+    background-image: url(https://th.bing.com/th/id/OIP.ooDCEqT79YjGvBQcsSJI_AAAAA?rs=1&pid=ImgDetMain);
+    background-repeat: repeat;
+    background-size: 180px 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    background-color: #8B5E5E;
+    padding: 10px;
+    width: 700px;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    background-color: #D19242;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 28%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: purple;
+    font-size: 18px;
+    padding: 6px;
+    width: 50%; 
+    text-align: center;
+    border-bottom: 1px solid black; 
+    cursor: pointer;
+}
+
+.mid-content {
+    margin-bottom: 65px;
+    width: 72%;
+}
+
+.mid-content button {
+    background-color: black;
+    color: yellow;
+    border: none;
+    padding: 2px 25px;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 1px;
+    text-align: center;
+    background-color: orange;
+    font-size: 12px;
+    height: auto; 
+    border: none;
+}
+
+.food-menu {
+    width: 72%;
+    display: none;
+}
+
+.food-menu table {
+    width: 100%;
+    border-collapse: separate;
+    text-align: left;
+    border: transparent;
+    border-spacing: 2px;
+}
+
+.food-menu th, .food-menu td {
+    padding: 4px;
+}
+
+.food-menu input[type="number"] {
+    width: 80%;
+}
+
+.food-menu input[type="text"] {
+    width: 80%;
+}
+
+.food-menu button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    cursor: pointer;
+    float: right;
+}
+
+.food-menu .reset-area {
+    text-align: center;
+    background-color: lightgray;
+    vertical-align: middle;
+}
+
+th, td, tr {
+    background-color: #ffd404;
+}
+
+.calculator-content {
+    width: 70%;
+    background-color: #D19242;
+    
+    display: none;
+}
+
+.calculator-inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calculator-inputs input {
+    width: 100px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.calculator-inputs select {
+    width: 50px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.calculator-inputs span {
+    margin: 0 5px;
+}
+
+.calculator-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.calculator-buttons button {
+    background-color: black;
+    color: yellow;
+    border: none;
+    padding: 4px 16px;
+    cursor: pointer;
+    width: 25%;
+}
+
+#result {
+    background-color: white;
+}

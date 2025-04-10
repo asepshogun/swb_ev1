@@ -1,0 +1,116 @@
+<!-- Referensi
+ www.w3schools.com
+ Praktikum Sistem Informasi Web
+ -->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Sederhana </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="image-grid">
+                <img src="https://ayokuliah.info/wp-content/uploads/2023/12/kampus-itenas-bandung_169.jpeg"
+                    alt="Itenas">
+                <img src="https://ayokuliah.info/wp-content/uploads/2023/12/kampus-itenas-bandung_169.jpeg"
+                    alt="Itenas">
+                <img src="https://ayokuliah.info/wp-content/uploads/2023/12/kampus-itenas-bandung_169.jpeg"
+                    alt="Itenas">
+                <img src="https://ayokuliah.info/wp-content/uploads/2023/12/kampus-itenas-bandung_169.jpeg"
+                    alt="Itenas">
+                <img src="https://ayokuliah.info/wp-content/uploads/2023/12/kampus-itenas-bandung_169.jpeg"
+                    alt="Itenas">
+                <img src="https://ayokuliah.info/wp-content/uploads/2023/12/kampus-itenas-bandung_169.jpeg"
+                    alt="Itenas">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="menu">
+                <a id="homeTab">Home</a>
+                <a id="menuTab">Menu</a>
+                <a id="calculatorTab">Calculator</a>
+            </div>
+
+            <div id="homeContent" class="mid-content">
+                <span>klik button disamping >> <button id="shoutButton">Shout</button></span>
+            </div>
+
+            <div id="foodMenu" class="food-menu">
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Makanan/Minuman</th>
+                        <th>Harga</th>
+                        <th>Pesan</th>
+                        <td rowspan="7" class="reset-area"><button onclick="resetForm()">Reset</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bakso Istimewa</td>
+                        <td>@ Rp 12000</td>
+                        <td><input type="number" id="bakso" value="0" min="0" onchange="hitungTotal()"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Soto Spesial</td>
+                        <td>@ Rp 10000</td>
+                        <td><input type="number" id="soto" value="0" min="0" onchange="hitungTotal()"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mie Ayam Super</td>
+                        <td>@ Rp 15000</td>
+                        <td><input type="number" id="mieAyam" value="0" min="0" onchange="hitungTotal()"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="right-align" style="text-align: right;">Jumlah Total</td>
+                        <td><input type="text" id="total" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="right-align" style="text-align: right;">Diskon</td>
+                        <td><input type="text" id="diskon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="right-align" style="text-align: right;">Jumlah Bayar</td>
+                        <td><input type="text" id="bayar" value="0" readonly></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="calculatorContent" class="calculator-content">
+                <div class="calculator-inputs">
+                    <input type="number" id="num1">
+                    <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                    <input type="number" id="num2">
+                    <span>=</span>
+                    <input type="text" id="result" readonly>
+                </div>
+                <div class="calculator-buttons">
+                    <button id="calculateButton">Hitung</button>
+                    <button id="calcResetButton">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>280224<br> Sistem Informasi | ITENAS 2024</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
